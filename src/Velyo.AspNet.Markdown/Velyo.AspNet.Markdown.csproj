@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Velyo.AspNet</RootNamespace>
     <AssemblyName>Velyo.AspNet.Markdown</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,11 +31,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MarkdownSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MarkdownSharp.1.13.0.0\lib\35\MarkdownSharp.dll</HintPath>
+    <Reference Include="ColorCode, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ColorCode.Portable.1.0.3\lib\portable45-net45+win8+wp8+wpa81\ColorCode.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Markdig, Version=0.10.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Markdig.0.10.3\lib\net40\Markdig.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -47,8 +53,6 @@
   <ItemGroup>
     <Compile Include="Markdown.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
