@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Velyo.AspNet.Markdown", "src\Velyo.AspNet.Markdown\Velyo.AspNet.Markdown.csproj", "{607F1AEF-FB3C-4021-B6A4-1B704F89BEC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1D4D1B22-97E9-42EB-93E7-57FFEA0F4DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Velyo.AspNet.Markdown.Samples", "test\Velyo.AspNet.Markdown.Samples\Velyo.AspNet.Markdown.Samples.csproj", "{C84B9669-1B36-4653-85CE-F5158C75AAA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0621037B-7110-4009-818F-61ED677EDA74}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		ISSUE_TEMPLATE.md = ISSUE_TEMPLATE.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{607F1AEF-FB3C-4021-B6A4-1B704F89BEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607F1AEF-FB3C-4021-B6A4-1B704F89BEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607F1AEF-FB3C-4021-B6A4-1B704F89BEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607F1AEF-FB3C-4021-B6A4-1B704F89BEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84B9669-1B36-4653-85CE-F5158C75AAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84B9669-1B36-4653-85CE-F5158C75AAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84B9669-1B36-4653-85CE-F5158C75AAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84B9669-1B36-4653-85CE-F5158C75AAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C84B9669-1B36-4653-85CE-F5158C75AAA0} = {1D4D1B22-97E9-42EB-93E7-57FFEA0F4DB4}
+	EndGlobalSection
+EndGlobal
