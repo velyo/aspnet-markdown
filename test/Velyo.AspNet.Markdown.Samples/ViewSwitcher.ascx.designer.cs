@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Velyo.AspNet.Samples {
+namespace Velyo.AspNet.Markdown.Markdown {
     
     
     public partial class ViewSwitcher {

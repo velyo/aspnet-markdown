@@ -7,7 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Velyo.AspNet.Samples {
+namespace Velyo.AspNet.Markdown
+{
     
     
     public partial class Site_Mobile {

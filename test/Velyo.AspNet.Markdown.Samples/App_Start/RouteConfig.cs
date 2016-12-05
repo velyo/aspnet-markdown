@@ -1,7 +1,7 @@
 using System.Web.Routing;
 using Microsoft.AspNet.FriendlyUrls;
 
-namespace Velyo.AspNet.Samples
+namespace Velyo.AspNet.Markdown
 {
     public static class RouteConfig
     {

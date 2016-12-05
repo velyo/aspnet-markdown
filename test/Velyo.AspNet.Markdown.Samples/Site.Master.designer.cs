@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Velyo.AspNet.Samples {
+namespace Velyo.AspNet.Markdown {
     
     
     public partial class SiteMaster {

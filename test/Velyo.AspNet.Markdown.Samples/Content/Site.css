@@ -18,6 +18,18 @@ textarea {
     max-width: 280px;
 }
 
+.side-nav {
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav a::before {
+    content: "\00BB ";
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

@@ -3,7 +3,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace Velyo.AspNet.Samples
+namespace Velyo.AspNet.Markdown
 {
     public class Global : HttpApplication
     {

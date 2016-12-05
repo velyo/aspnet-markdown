@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.UI;
 
-namespace Velyo.AspNet.Samples
+namespace Velyo.AspNet.Markdown
 {
     public partial class _Default : Page
     {

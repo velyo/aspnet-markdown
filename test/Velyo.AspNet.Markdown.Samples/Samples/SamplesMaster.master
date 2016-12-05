@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SamplesMaster.master.cs" Inherits="Velyo.AspNet.Markdown.Samples.SamplesMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="row">
+        <div class="col-md-8">
+            <asp:ContentPlaceHolder ID="SampleContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="col-md-4">
+            <div class="side-nav">
+                <h3>Sample pages</h3>
+                <ul>
+                    <li><a href="/samples">Embedded Content</a></li>
+                    <li><a href="/samples/page2">From File</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</asp:Content>

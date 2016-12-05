@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Velyo.AspNet.Samples.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Velyo.AspNet.Markdown.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -52,9 +52,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/sample">Sample</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/samples">Samples</a></li>
+                        <li><a runat="server" href="~/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

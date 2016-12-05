@@ -3,30 +3,50 @@ using System.IO;
 using System.Text;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Markdig;
 
-namespace Velyo.AspNet
+namespace Velyo.AspNet.Markdown
 {
     [ToolboxData("<{0}:Markdown runat=\"server\"></{0}:Markdown>")]
     [ParseChildren(true, nameof(Content))]
-    public class Markdown : WebControl
+    public class MarkdownContent : WebControl
     {
-        [Browsable(false)]
         [Bindable(true)]
         [Category("Markdown")]
-        [DefaultValue("")]
+        [DefaultValue(null)]
         [Description("Markdown content")]
         [PersistenceMode(PersistenceMode.EncodedInnerDefaultProperty)]
         public virtual string Content { get; set; }
 
+        [Category("Markdown")]
+        [DefaultValue(0)]
+        [Description("Markdown content indent")]
         public int Indent { get; set; }
+
+        [Category("Markdown")]
+        [DefaultValue(null)]
+        [Description("Markdown content resource path")]
+        public virtual string Path { get; set; }
 
         protected override void Render(HtmlTextWriter writer)
         {
-            if (!string.IsNullOrWhiteSpace(Content))
+            var content = GetHtml();
+            if (content != null)
             {
-                var content = Content;//.Trim();
+                writer.Write(content);
+            }
+        }
 
+        protected virtual string GetHtml()
+        {
+            return MarkdownEngine.Current.GetHtml(UniqueID, GetContent);
+        }
+
+        protected virtual string GetContent()
+        {
+            var content = Content;
+
+            if (content != null)
+            {
                 if (Indent > 0)
                 {
                     var buffer = new StringBuilder();
@@ -49,13 +69,13 @@ namespace Velyo.AspNet
 
                     content = buffer.ToString();
                 }
-
-                // TODO cache this
-                var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
-                var result = Markdig.Markdown.ToHtml(content, pipeline);
-
-                writer.Write(result);
             }
+            else if (Path != null)
+            {
+                content = MarkdownProvider.Current.GetMarkdownContent(Path);
+            }
+
+            return content;
         }
     }
 }

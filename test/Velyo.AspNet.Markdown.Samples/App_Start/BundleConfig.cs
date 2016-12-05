@@ -1,7 +1,7 @@
 ﻿using System.Web.Optimization;
 using System.Web.UI;
 
-namespace Velyo.AspNet.Samples
+namespace Velyo.AspNet.Markdown
 {
     public class BundleConfig
     {
