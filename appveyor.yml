@@ -4,7 +4,7 @@ branches:
   - master
 configuration: Release
 init:
-- ps: Update-AppveyorBuild -Version "1.0.$env:appveyor_build_number.$([datetime](Get-Date) - [datetime]'2000-01-01')"
+- ps: Update-AppveyorBuild -Version "1.0.$env:appveyor_build_number.$(([datetime](Get-Date) - [datetime]'2000-01-01').Days)"
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
