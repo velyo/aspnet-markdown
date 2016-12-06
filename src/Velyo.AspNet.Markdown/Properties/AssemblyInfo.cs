@@ -20,4 +20,5 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("607f1aef-fb3c-4021-b6a4-1b704f89bec1")]
 
+#pragma warning disable 7034
 [assembly: AssemblyVersion("1.0.*")]
