@@ -26,6 +26,14 @@ By configuring the current MarkdownProvider ``` MarkdownProvider.Current``` cont
 The control comes with embedded (default) engine using MarkdownSharp [https://github.com/hey-red/Markdown].  
 By creating you own implementation of MarkdownEngine and set it to ```MarkdownEngine.Current``` you can configure control to use other markdown engine by your choose.
 
+## Getting Started
+
+To install AspNet Markdown Control, run the following command in the Package Manager Console
+```
+PM> Install-Package Velyo.AspNet.Markdown
+```
+Samples of how to use the control can be found in Velyo.AspNet.Markdown.Samples
+
 ## Contribute
 
 Check out the [contribution guidelines](https://github.com/velyo/aspnet-markdown/blob/master/CONTRIBUTING.md) if you want to contribute to this project.
