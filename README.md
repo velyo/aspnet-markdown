@@ -24,7 +24,7 @@ will try to load the resource from file page2.md placed in docs sub-folder of th
 By configuring the current MarkdownProvider ``` MarkdownProvider.Current``` control can use different markdown resource sources (files, database etc.).
 
 The control comes with embedded (default) engine using MarkdownSharp [https://github.com/hey-red/Markdown].  
-By creating you own implementation of MarkdownEngine and set it to ```MarkdownEngine.Current``` you can configure control to use other markdown engine by your choose.
+By creating your own implementation of MarkdownEngine and set it to ```MarkdownEngine.Current``` you can configure control to use other markdown engine by your choose.
 
 ## Getting Started
 
