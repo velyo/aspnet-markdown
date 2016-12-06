@@ -4,7 +4,7 @@ branches:
   - master
 configuration: Release
 init:
-- ps: Update-AppveyorBuild -Version "1.$(Get-Date -format yyyy.M).$env:appveyor_build_number"
+- ps: Update-AppveyorBuild -Version "1.0.$env:appveyor_build_number.$(Get-Date -format yyMMdd)"
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -15,3 +15,6 @@ before_build:
 - cmd: nuget restore
 build:
   verbosity: minimal
+artifact:
+- path: '**\*.dll'
+- path: '**\*.pdb'
