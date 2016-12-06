@@ -26,5 +26,5 @@ deploy:
   api_key:
     secure: pi98jdOOgUknVbO9zAh2LJiCCsc48HRZ3sGMvCX7DbkeBglS/T1gPcpGee9oOvqO
   artifact: /.*\.nupkg/
-# on:
-# appveyor_repo_tag: true # deploy on tag push only
+  on:
+    appveyor_repo_tag: true # deploy on tag push only
