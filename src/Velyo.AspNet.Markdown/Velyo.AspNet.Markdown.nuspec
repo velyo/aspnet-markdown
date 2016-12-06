@@ -15,6 +15,6 @@
         <tags>asp.net web forms control markdown</tags>
     </metadata>
     <files>
-        <file src="web.config.install.xdt" target="web.config"/>
+        <file src="web.config.install.xdt" target="content"/>
     </files>
 </package>
