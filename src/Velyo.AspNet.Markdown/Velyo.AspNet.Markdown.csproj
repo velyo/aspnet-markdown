@@ -54,6 +54,7 @@
     <Compile Include="Utils\MarkdownOptions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="web.config.install.xdt" />
     <None Include="Velyo.AspNet.Markdown.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
