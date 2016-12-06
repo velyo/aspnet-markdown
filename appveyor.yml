@@ -15,6 +15,7 @@ before_build:
 - cmd: nuget restore
 build:
   verbosity: minimal
+  publish_nuget: true
 artifacts:
 - path: 'src\**\bin\**\Velyo.AspNet.Markdown.dll'
 - path: 'src\**\bin\**\Velyo.AspNet.Markdown.pdb'
