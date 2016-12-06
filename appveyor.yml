@@ -16,5 +16,5 @@ before_build:
 build:
   verbosity: minimal
 artifacts:
-- path: '**\*.dll'
-- path: '**\*.pdb'
+- path: 'src\**\bin\**\Velyo.AspNet.Markdown.dll'
+- path: 'src\**\bin\**\Velyo.AspNet.Markdown.pdb'

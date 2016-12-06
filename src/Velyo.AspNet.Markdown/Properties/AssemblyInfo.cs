@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("AspNet Markdown")]
+[assembly: AssemblyTitle("AspNet Markdown Control")]
 [assembly: AssemblyDescription("ASP.NET Custom Control for embed and render markdown")]
 [assembly: AssemblyCompany("Velyo Ivanov [http://velyo.net]")]
 [assembly: AssemblyProduct("Velyo.AspNet.Markdown [https://github.com/velyo/aspnet-markdown]")]
