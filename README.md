@@ -1,5 +1,6 @@
 # ASP.NET Markdown
 
+[![Build status](https://ci.appveyor.com/api/projects/status/h7gvev4ogigfgjx0?svg=true)](https://ci.appveyor.com/project/velyo/aspnet-markdown)
 
 ASP.NET Markdown control to embed and render markdown content in ASP.NET web forms application.  
 The control has built-in simple configurable architecture to provide and easy way to change and configure the markdown engine and markdown resource loading.
