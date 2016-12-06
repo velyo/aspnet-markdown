@@ -18,3 +18,5 @@ build:
 artifacts:
 - path: 'src\**\bin\**\Velyo.AspNet.Markdown.dll'
 - path: 'src\**\bin\**\Velyo.AspNet.Markdown.pdb'
+nuget:
+  account_feed: true
