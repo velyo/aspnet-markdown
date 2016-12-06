@@ -21,3 +21,10 @@ artifacts:
 - path: 'src\**\bin\**\Velyo.AspNet.Markdown.pdb'
 nuget:
   account_feed: true
+deploy:
+- provider: NuGet
+  api_key:
+    secure: pi98jdOOgUknVbO9zAh2LJiCCsc48HRZ3sGMvCX7DbkeBglS/T1gPcpGee9oOvqO
+  artifact: /.*\.nupkg/
+  on:
+    appveyor_repo_tag: true # deploy on tag push only
