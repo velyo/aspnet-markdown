@@ -3,7 +3,7 @@
     <system.web>
         <pages controlRenderingCompatibilityVersion="4.0">
             <controls>
-                <add tagPrefix="velyo" namespace="Velyo.AspNet" assembly="Velyo.AspNet.Markdown" xdt:Transform="Remove" xdt:Locator="Match(tagPrefix,namespace)"/>
+                <add tagPrefix="velyo" namespace="Velyo.AspNet.Markdown" assembly="Velyo.AspNet.Markdown" xdt:Transform="Remove" xdt:Locator="Match(tagPrefix,namespace)"/>
                 <add tagPrefix="velyo" namespace="Velyo.AspNet.Markdown" assembly="Velyo.AspNet.Markdown" xdt:Transform="Insert" xdt:Locator="Match(tagPrefix,namespace)"/>
             </controls>
         </pages>
