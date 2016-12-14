@@ -32,7 +32,38 @@ To install AspNet Markdown Control, run the following command in the Package Man
 ```
 PM> Install-Package Velyo.AspNet.Markdown
 ```
-Samples of how to use the control can be found in Velyo.AspNet.Markdown.Samples
+After install a new ASP.NET tag prefix will be registered in your web.config
+```xml
+<add assembly="Velyo.AspNet.Markdown" namespace="Velyo.AspNet.Markdown" tagPrefix="velyo" />
+```
+
+You can just add the control to your ASP.NET WebForms page with some embedded markdown content like:
+```aspnet
+    <velyo:MarkdownContent ID="sample1"  runat="server">
+# ASP.NET Markdown
+
+ASP.NET Markdown control to embed and render markdown content in your ASP.NET application.
+
+## Features
+
+
+## Contribute
+
+Check out the [contribution guidelines](https://github.com/velyo/aspnet-markdown/blob/master/CONTRIBUTING.md) if you want to contribute to this project.
+
+## License
+
+[MIT](https://github.com/velyo/aspnet-markdown/blob/master/LICENSE)
+
+    </velyo:MarkdownContent>
+```
+Please note there is no line indent in the markdown content in order the markdown engine to be able to process it.  
+If you would like to have nice formatted page content, you can use the Indent property of the control in order to help markdown engine to trip down the format indent.
+```
+<velyo:MarkdownContent ID="sample1"  runat="server" Indent="4">
+```
+
+Samples of how to use the control can be found in Velyo.AspNet.Markdown.Samples web application.
 
 ## Contribute
 
